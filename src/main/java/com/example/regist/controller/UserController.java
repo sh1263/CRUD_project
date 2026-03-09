@@ -16,9 +16,11 @@ public class UserController {
 	
 	@PostMapping("/add")
 	public ModelAndView showReg(@RequestParam String name,
+								@RequestParam String address,
 								ModelAndView mav) {
 		mav.setViewName("register");
 		mav.addObject("name", name);
+		mav.addObject("address", address);
 		return mav;
 	}
 }

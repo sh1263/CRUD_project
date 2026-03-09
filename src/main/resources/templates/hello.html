@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>入力画面</title>
+	<meta charset="UTF-8">
+	<title>入力画面</title>
 </head>
 <body>
 	<h1>顧客情報登録画面</h1>
 	<form action="/add" method="post">
-		名前: <input type="text" name="name"><br>
-<!--		住所: <input type="text" name="address"><br>-->
+			<tr>
+				<th>名前: </th>
+				<td><input type="text" name="name"></td>
+			</tr><br>
+			<tr>
+				<th>住所:</th>
+				<td><input type="text" name="address"><br></td>
+			</tr>
+		</table>		 
 		<input type="submit" value="登録">
 	</form>
 </body>

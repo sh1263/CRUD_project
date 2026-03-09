@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>登録完了</title>
+	<meta charset="UTF-8">
+	<title>登録完了</title>
 </head>
 <body>
-	<h1 th:text="${name} + 'さん、登録しました'"></h1>
+	<h1 th:text="${name} + 'さん、登録しました' ">登録名</h1>
+	<table>
+		<tr>
+			<th>名前：</th>
+			<td th:text="${name}"></td>
+		</tr><br>
+		<tr>
+			<th>住所：</th>
+			<td th:text="${address}"></td>
+		</tr>
+	</table>
 </body>
 </html>
